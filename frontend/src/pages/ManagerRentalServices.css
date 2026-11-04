@@ -1,0 +1,297 @@
+.mrs-page {
+  padding: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mrs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.mrs-header h2 {
+  margin: 0 0 7px;
+  font-size: 25px;
+}
+
+.mrs-header p {
+  margin: 0;
+  color: #777;
+}
+
+.mrs-total {
+  background: #eef4ff;
+  padding: 14px 22px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 120px;
+}
+
+.mrs-total span {
+  color: #555;
+  font-size: 13px;
+}
+
+.mrs-total strong {
+  font-size: 23px;
+  color: #2457a7;
+}
+
+.mrs-filters {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.mrs-filters input,
+.mrs-filters select,
+.mrs-modal input,
+.mrs-modal select {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #d5d9e0;
+  border-radius: 7px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  background: white;
+}
+
+.mrs-filters input:focus,
+.mrs-filters select:focus,
+.mrs-modal input:focus,
+.mrs-modal select:focus {
+  border-color: #3478d4;
+}
+
+.mrs-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.mrs-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 850px;
+}
+
+.mrs-table th,
+.mrs-table td {
+  padding: 13px 14px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.mrs-table th {
+  background: #f5f7fa;
+  color: #444;
+  font-weight: 600;
+}
+
+.mrs-table tbody tr:hover {
+  background: #fafcff;
+}
+
+.mrs-status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.mrs-available {
+  background: #e2f7e9;
+  color: #16823d;
+}
+
+.mrs-occupied {
+  background: #e4edff;
+  color: #2457a7;
+}
+
+.mrs-maintenance {
+  background: #fff0d9;
+  color: #a76400;
+}
+
+.mrs-actions {
+  display: flex;
+  gap: 7px;
+}
+
+.mrs-actions button,
+.mrs-close-btn,
+.mrs-save-btn,
+.mrs-cancel-btn {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.mrs-view-btn {
+  background: #e8efff;
+  color: #2457a7;
+}
+
+.mrs-edit-btn {
+  background: #e5f5ec;
+  color: #18733a;
+}
+
+.mrs-message {
+  padding: 35px 15px;
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+  color: #666;
+}
+
+.mrs-alert {
+  padding: 12px 15px;
+  border-radius: 7px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.mrs-error {
+  background: #fde8e8;
+  color: #b42318;
+}
+
+.mrs-success {
+  background: #e5f6eb;
+  color: #18733a;
+}
+
+.mrs-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  z-index: 1000;
+}
+
+.mrs-modal {
+  background: white;
+  width: 100%;
+  max-width: 480px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 22px;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.mrs-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.mrs-modal-header h3 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.mrs-modal-header button {
+  border: none;
+  background: transparent;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.mrs-details p {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.mrs-details strong {
+  color: #444;
+}
+
+.mrs-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mrs-modal form label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.mrs-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.mrs-save-btn {
+  background: #2457a7;
+  color: white;
+}
+
+.mrs-cancel-btn,
+.mrs-close-btn {
+  background: #e9edf2;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .mrs-page {
+    padding: 15px;
+  }
+
+  .mrs-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .mrs-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .mrs-total {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .mrs-header h2 {
+    font-size: 21px;
+  }
+
+  .mrs-modal {
+    padding: 17px;
+  }
+
+  .mrs-details p {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
